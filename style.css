@@ -321,16 +321,37 @@ h3 {
 .tekst_container_overmij p {
     font-family: 'agenda',Arial, Helvetica, sans-serif;
     font-size: 1.1em;
-    padding: 0em 0em 1em 3em;
+    padding: 0em 0em 0.5em 3em;
     margin: 0;
 }
 
+.img_apps {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    padding-left: 3em;
+    margin-bottom: 3em;
+    margin-top: 0;
+    gap: 2em;
+}
+
+.img_apps img {
+    max-width: 100%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
 
 /* page 3 */
 
 .projecten_titel h1 {
     margin-left: 80px;
-    padding: 0;
+    padding: 0.5em 0em 0em 0em;
 }
 
 .projecten_titel p {
@@ -343,14 +364,14 @@ h3 {
     position: relative;
     width: 90%;
     height: auto;
-    margin: 20px 80px 50px 50px;
+    margin: 20px 90px 50px 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    grid-gap: 40px;
+    grid-gap: 35px;
 }
 
 .container_imagegallery img {
-    border-radius: 15px;
+    border-radius: 20px;
     width: 100%;
     cursor: pointer;
 }
@@ -362,20 +383,16 @@ h3 {
     box-shadow: 0 32px 25px rgba(68, 77, 136, 0.2);
 }
 
-
-/*
-.video_one {
-    margin-left: 15em;
-    padding: 0em 1em 0em 0em;
+.text_underimg h2 {
+    text-align: left;
+    padding: 0.5em 0em 0.2em 0em;
+}
+.text_underimg span {
+    font-size: 1.1em;
+    font-family: 'agenda',Arial, Helvetica, sans-serif;
 }
 
-.video_two {
-    margin-right: 15em;
-    padding: 0em 0em 0em 1em;
-}
-*/
-
-/*page 4 contact*/
+/* page 4*/
 
 .container_iconen_contact {
     display: flex;
@@ -406,7 +423,7 @@ h3 {
 
 .section_contactform {
     min-height: 100vh;
-    padding-top: 100px;
+    padding-top: 20px;
     padding-bottom: 100px;
     background-image: linear-gradient(175deg, #EFEEEA 50%,  #EB6B6A  50%, #0455BF);
 }
@@ -502,11 +519,12 @@ input[type="submit"] {
     background: none;
     padding: 12px 16px;
     background-color: #0455BF;
-    border-radius: 8px;
+    border-radius: 50px;
     color: white;
     cursor: pointer;
     transition: 0.4s;
     margin: 0.8em;
+    box-shadow: 0px 3px 1px 0px rgb(75, 75, 75);
 }
 
 input[type="submit"]:hover {
@@ -524,19 +542,20 @@ input[type="submit"]:hover {
 .icon_one {
     padding: 0.5em;
     background-color: white;
-    border-radius: 100%;
-
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 2px #0455BF;
 }
 
 .icon_two {
     padding: 0.5em;
     background-color: white;
-    border-radius: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 2px #0455BF;
 }
 
 .socialiconen  img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: auto;
 }
 
 footer {
